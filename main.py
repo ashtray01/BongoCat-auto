@@ -41,31 +41,6 @@ def mensagem_colorida(texto, cor=False):
     else:
         return f"\033[38;2;255;255;255m{texto}\033[0m"
 
-# Всё что иже - не обращай внимания, это визуал, не более
-def mensagem_bitcoin():
-    global bitcoin_msgs
-    bitcoin_msgs += 1
-    hora = datetime.now().strftime("%H:%M:%S")
-    frases = [
-        "инициализация потока майнинга...",
-        "подключение",
-        "поиск допустимого одноразового номера...",
-        "блок проверки 0x24f...a91",
-        "SHA-256 параллельное выполнение началось...",
-        "проверка целости завершена",
-        "отправить принято сетью",
-        "синхронизация времени...",
-        "хэш-пакет получен и обработан"
-    ]
-    frase = random.choice(frases)
-    valor_btc = f"+0.000000{random.randint(100, 999)} BTC"
-    valor_destacado = f"\033[1;93m{valor_btc}\033[0m"
-    return (
-        mensagem_colorida(hora, cor=False) + " " +
-        mensagem_colorida(f"оповещение: {frase} ", cor=True) +
-        valor_destacado
-    )
-
 def locate_image(image_path):
     """Функция для поиска изображения с обработкой ошибки confidence"""
     global use_confidence
@@ -118,9 +93,6 @@ def clicar_no_bau():
             texto = f"сундучок подобран! /ᐠ. .ᐟ\\ Ⳋ ({contador}) - {os.path.basename(image_found)}"
             print(mensagem_colorida(texto, cor=True))
 
-            if random.randint(1, 69) == 1:
-                print(mensagem_bitcoin())
-                
             return True
         except Exception as e:
             print(f"Ошибка при клике: {e}")
@@ -151,7 +123,6 @@ def show_stats():
     print("\n\n\033[1;36m[ СТАТИСТИКА ]\033[0m")
     print(f"время выполнения: {horas}h {minutos}m {segundos}s")
     print(f"общее количество нажатых сундуков: {contador}")
-    print(f"(на это внимание не обращаем): {bitcoin_msgs}")
 
 def test_images():
     """Функция для тестирования распознавания изображений"""
@@ -201,4 +172,5 @@ def main():
         input("нажмите Enter, чтобы закрыть программу...")
 
 if __name__ == "__main__":
+
     main()
