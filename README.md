@@ -2,11 +2,11 @@
 
 Автоматизированный скрипт для сбора сундуков в игре с помощью компьютерного зрения и эмуляции нажатий клавиш.
 
-## 📥 Скачать Zip архив Python скрипта клики+сундуки
+## 📥 Скачать Zip архив с Python скриптом клики+сундуки
 
 [![Скачать Zip](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=windows)](https://github.com/RoninOnis/BongoCat-auto/releases/tag/BongoCat_auto_v1.2)
 
-## 📥 Скачать Zip архив DLL по автосбору сундуков
+## 📥 Скачать Zip архив с DLL по автосбору сундуков
 
 [![Скачать Zip](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=windows)](https://github.com/RoninOnis/BongoCat-auto/releases/tag/BongoCat_DLL_chest_v1.0)
 
