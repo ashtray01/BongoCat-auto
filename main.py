@@ -33,7 +33,6 @@ user32 = ctypes.windll.user32
 kernel32 = ctypes.windll.kernel32
 running = False
 contador = 0
-bitcoin_msgs = 0
 inicio = time.time()
 use_confidence = True  # Флаг для использования confidence
 
@@ -41,15 +40,6 @@ def press_key():
     user32.keybd_event(KEY, 0, 0x0001, 0)  # KEY_DOWN
     time.sleep(random.uniform(MIN_PRESS_DUR, MAX_PRESS_DUR))
     user32.keybd_event(KEY, 0, 0x0002, 0)  # KEY_UP
-
-def mensagem_colorida(texto, cor=False):
-    if cor:
-        r = random.randint(0, 255)
-        g = random.randint(0, 255)
-        b = random.randint(0, 255)
-        return f"\033[38;2;{r};{g};{b}m{texto}\033[0m"
-    else:
-        return f"\033[38;2;255;255;255m{texto}\033[0m"
 
 def locate_image(image_path):
     """Функция для поиска изображения с обработкой ошибки confidence"""
@@ -101,7 +91,7 @@ def clicar_no_bau():
             
             contador += 1
             texto = f"Сундучок подобран! /ᐠ. .ᐟ\\ Ⳋ ({contador}) - {os.path.basename(image_found)}"
-            print(mensagem_colorida(texto, cor=True))
+            print(texto)
 
             return True
         except Exception as e:
@@ -130,7 +120,7 @@ def show_stats():
     minutos = int((tempo_total % 3600) // 60)
     segundos = int(tempo_total % 60)
 
-    print("\n\n\033[1;36m[ СТАТИСТИКА ]\033[0m")
+    print("\n\n\033 СТАТИСТИКА \033")
     print(f"Время выполнения: {horas}ч {minutos}м {segundos}с")
     print(f"Общее количество нажатых сундуков: {contador}")
 
@@ -183,3 +173,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
