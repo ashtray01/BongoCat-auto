@@ -2,9 +2,20 @@
 
 Автоматизированный скрипт для сбора сундуков в игре с помощью компьютерного зрения и эмуляции нажатий клавиш.
 
-## 📥 Скачать Zip архив
+## 📥 Скачать Zip архив Python скрипта клики+сундуки
 
 [![Скачать Zip](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=windows)](https://github.com/RoninOnis/BongoCat-auto/releases/tag/BongoCat_auto_v1.2)
+
+## 📥 Скачать Zip архив DLL по автосбору сундуков
+
+[![Скачать Zip](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=windows)](https://github.com/RoninOnis/BongoCat-auto/releases/tag/BongoCat_DLL_chest_v1.0)
+
+
+Что необходимо сделать:
+1. Закрыть BongoCat
+2. Открыть файлы с игрой C:\Program Files (x86)\Steam\steamapps\common\BongoCat\BongoCat_Data\Managed
+3. Заменить DLL и PDB из архива в папку
+4. Запустить игру
 
 ## 🚨 Важное ограничение
 
