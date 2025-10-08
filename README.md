@@ -13,7 +13,7 @@
 
 Что необходимо сделать:
 1. Закрыть BongoCat
-2. Открыть файлы с игрой C:\Program Files (x86)\Steam\steamapps\common\BongoCat\BongoCat_Data\Managed
+2. Открыть папку с DLL игры C:\Program Files (x86)\Steam\steamapps\common\BongoCat\BongoCat_Data\Managed
 3. Заменить DLL и PDB из архива в папку
 4. Запустить игру
 
