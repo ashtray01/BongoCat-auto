@@ -6,10 +6,11 @@
 
 [![Скачать Zip](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=windows)](https://github.com/RoninOnis/BongoCat-auto/releases/tag/BongoCat_auto_v1.2)
 
+Данный скрипт предназначен для эмуляции клавиатуры используется в скрипте HEX коды символов и сбор сундуков с помощью компьютерного зрения.
+
 ## 📥 Скачать Zip архив с DLL по автосбору сундуков
 
 [![Скачать Zip](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=windows)](https://github.com/RoninOnis/BongoCat-auto/releases/tag/BongoCat_DLL_chest_v1.0)
-
 
 Что необходимо сделать:
 1. Закрыть BongoCat
