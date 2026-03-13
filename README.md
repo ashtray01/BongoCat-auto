@@ -10,8 +10,6 @@
 3. Заменить DLL и PDB из архива в папку
 4. Запустить игру
 
-Отличный скрипт! Вот профессионально оформленный README файл для GitHub:
-
 # 🎹 Keyboard Masher / Клавиатурный кликер
 
 [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
